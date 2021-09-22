@@ -1,2 +1,2 @@
 # CyberSecurity-Projects
-Projects including system administration scripts, cloud computing and networking projects and more.  
+Including system administration scripts, cloud computing files, networking maps and more.  
