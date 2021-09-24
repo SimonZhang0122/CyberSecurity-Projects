@@ -9,7 +9,7 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ansible file may be used to install only certain pieces of it, such as Filebeat and Metricbeat.
 
   - [Filebeat-Setup.yml](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/9f7ea64a036eec7b0ab1b017842756e2bae28c67/Automated%20ELK%20Deployment/Filebeat-Playbook.yml)
-  - [Metricbeat-Setup.yml] TODO
+  - [Metricbeat-Setup.yml](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/947c695a95dfec9401b6dad72a6c29df30d1c938/Automated%20ELK%20Deployment/Metricbeat-Setup.yml)
 
 This document contains the following details:
 - Description of the Topologu
