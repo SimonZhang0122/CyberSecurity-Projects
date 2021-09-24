@@ -95,16 +95,10 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the [filebeat](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/963a0061bf02c96ebecf0b6c65ae6536f59a2d59/Automated%20ELK%20Deployment/Filebeat-Setup.yml)  and [metricbeat](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/963a0061bf02c96ebecf0b6c65ae6536f59a2d59/Automated%20ELK%20Deployment/Metricbeat-Setup.yml) and [hosts](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/39568c39d30e4927e7cda0aedcafeb6af1b2042e/Automated%20ELK%20Deployment/hosts) files to /etc/ansible/. TODO
-- Update the [hosts](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/39568c39d30e4927e7cda0aedcafeb6af1b2042e/Automated%20ELK%20Deployment/hosts) file to include the monitor IP under ELK (include ansible_python_interpreter=/usr/bin/python3 after the IP to run with python) . TODO
+- Copy the [Filebeat](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/963a0061bf02c96ebecf0b6c65ae6536f59a2d59/Automated%20ELK%20Deployment/Filebeat-Setup.yml)  and [Metricbeat](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/963a0061bf02c96ebecf0b6c65ae6536f59a2d59/Automated%20ELK%20Deployment/Metricbeat-Setup.yml) and [hosts](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/39568c39d30e4927e7cda0aedcafeb6af1b2042e/Automated%20ELK%20Deployment/hosts) files to /etc/ansible/. 
+- Update the [hosts](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/39568c39d30e4927e7cda0aedcafeb6af1b2042e/Automated%20ELK%20Deployment/hosts) file to include the monitor IP under ELK (include **ansible_python_interpreter=/usr/bin/python3** after the IP to run with python).
 - Run the playbook, and navigate to **PLAY RECAP** to check that the installation worked as expected.
 
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
-
-<<<<<<< HEAD
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
-=======
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
->>>>>>> 3aa1c7a24ff6179615059363334df0a6376d990f
+- [ELK](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/83516e5cb9faa89efb362e41b64bc6f0e99cf8ab/Automated%20ELK%20Deployment/ELK-Setup.yml), [Filebeat](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/83516e5cb9faa89efb362e41b64bc6f0e99cf8ab/Automated%20ELK%20Deployment/Filebeat-Setup.yml), [Metricbeat](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/83516e5cb9faa89efb362e41b64bc6f0e99cf8ab/Automated%20ELK%20Deployment/Metricbeat-Setup.yml) are the playbooks, once you set up ansible, you can copy them to **/etc/ansible/**.
+- [hosts](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/83516e5cb9faa89efb362e41b64bc6f0e99cf8ab/Automated%20ELK%20Deployment/hosts) file can be updated to choose the destination IP address of where you want to run the previously mentioned playbooks on, within [hosts](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/83516e5cb9faa89efb362e41b64bc6f0e99cf8ab/Automated%20ELK%20Deployment/hosts) you can make your own category of hosts by adding **[yourChoiceOfName]** and your choices of IPs under that name, or you can directly mentioned the IP address in the playbooks on 3rd line after [**hosts:**](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/83516e5cb9faa89efb362e41b64bc6f0e99cf8ab/Automated%20ELK%20Deployment/ELK-Setup.yml#L3)  
+- Once Everything has been setted up, you can navigate to **yourMachinesPublicIP:5601/app/kibana** to make sure its working (_for exmaple, if my ELK machine's IP is 20.109.127.43, then the URL will be 20.109.127.43:5601/app/kibana_) 
