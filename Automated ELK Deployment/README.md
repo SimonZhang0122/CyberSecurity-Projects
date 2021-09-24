@@ -62,7 +62,7 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+Ansible was used to automate configuration of the [ELK machine](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/39568c39d30e4927e7cda0aedcafeb6af1b2042e/Automated%20ELK%20Deployment/ELK-Setup.yml). No configuration was performed manually, which is advantageous because...
 - Automating configuration with Ansible saves time for now and future deployments, it eliminates mechanical errors and can be used not only in application deployments and configuration management but also in provisioning,intra-service orchestration, and many other IT needs.
 
 The playbook implements the following tasks:
@@ -95,8 +95,8 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the [filebeat](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/963a0061bf02c96ebecf0b6c65ae6536f59a2d59/Automated%20ELK%20Deployment/Filebeat-Setup.yml)  and [metricbeat](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/963a0061bf02c96ebecf0b6c65ae6536f59a2d59/Automated%20ELK%20Deployment/Metricbeat-Setup.yml) and [hosts] files to /etc/ansible/. TODO
-- Update the [hosts] file to include the monitor IP under ELK (include ansible_python_interpreter=/usr/bin/python3 after the IP to run with python) . TODO
+- Copy the [filebeat](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/963a0061bf02c96ebecf0b6c65ae6536f59a2d59/Automated%20ELK%20Deployment/Filebeat-Setup.yml)  and [metricbeat](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/963a0061bf02c96ebecf0b6c65ae6536f59a2d59/Automated%20ELK%20Deployment/Metricbeat-Setup.yml) and [hosts](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/39568c39d30e4927e7cda0aedcafeb6af1b2042e/Automated%20ELK%20Deployment/hosts) files to /etc/ansible/. TODO
+- Update the [hosts](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/39568c39d30e4927e7cda0aedcafeb6af1b2042e/Automated%20ELK%20Deployment/hosts) file to include the monitor IP under ELK (include ansible_python_interpreter=/usr/bin/python3 after the IP to run with python) . TODO
 - Run the playbook, and navigate to **PLAY RECAP** to check that the installation worked as expected.
 
 - _Which file is the playbook? Where do you copy it?_
