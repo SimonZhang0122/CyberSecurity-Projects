@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 # CyberSecurity-Projects
->>>>>>> 3aa1c7a24ff6179615059363334df0a6376d990f
 ## Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
