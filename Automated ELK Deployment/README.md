@@ -38,7 +38,7 @@ The configuration details of each machine may be found below.
 | Jump Box | Gateway  | 10.0.0.4   | Linux            |
 | WEB-1    | Target   | 10.0.0.5   | Linux            |
 | WEB-2    | Target   | 10.0.0.6   | Linux            |
-| ELK      | IDS      | 10.2.0.40  | Linux            |
+| ELK      | IDS      | 10.2.0.4   | Linux            |
 
 ### Access Policies
 
