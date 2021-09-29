@@ -1,7 +1,7 @@
-# CyberSecurity-Projects
-## Automated ELK Stack Deployment
+# Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+
+### The files in this repository were used to configure the network depicted below.
 
 ![ELK Network Full Diagram](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/1df55059afeec943886ad88013bad61ab30ab8c9/ELK%20Network%20Map.png)
 
