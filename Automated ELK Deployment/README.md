@@ -24,7 +24,7 @@ This document contains the following details:
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly efficient and distributed, in addition to restricting any incoming traffics to the network.
-- The load balancer ensures high availability and reliability by distributing the network traffics and also protects the DWVA from any melicious attempts. The advantage of the jump box makes sure it is the only access point to the DWVA machines, and such eliminates possibilities of backdoors and lessen possible compromisations.
+- The load balancer ensures high availability and reliability by distributing the network traffics and also protects the DVWA from any melicious attempts. The advantage of the jump box makes sure it is the only access point to the DVWA machines, and such eliminates possibilities of backdoors and lessen possible compromisations.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the services running on the servers and system metrics such as CPU or memory.
 - Filebeat is a shipper for centralizing system logs collected from __Metricbeat__ and forwarding them to Logstash and Elasticsearch on Kibana.
