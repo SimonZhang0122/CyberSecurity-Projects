@@ -11,7 +11,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - [Metricbeat-Setup.yml](https://github.com/SimonZhang0122/CyberSecurity-Projects/blob/947c695a95dfec9401b6dad72a6c29df30d1c938/Automated%20ELK%20Deployment/Metricbeat-Setup.yml)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
